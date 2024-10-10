@@ -1,1 +1,29 @@
-<p>start works!</p>
+<mat-toolbar color="primary">
+    <span>Venture Menu</span>
+  </mat-toolbar>
+  
+  <div class="container">
+    <mat-card>
+      <h1>Welcome to Your Venture</h1>
+      <p>Select an option to proceed:</p>
+  
+      <button mat-raised-button color="primary" (click)="startNewVenture()">Start New Venture</button>
+      <button mat-raised-button color="accent" (click)="continueVenture()">Continue Venture</button>
+      <button mat-raised-button color="warn" (click)="personalAssets()">Personal Assets</button>
+  
+      <!-- Settings Menu with Expansion Panel -->
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Settings</mat-panel-title>
+          </mat-expansion-panel-header>
+          <button mat-button (click)="displaySettings()">Display</button><br>
+          <button mat-button (click)="soundSettings()">Sound</button><br>
+          <button mat-button (click)="accountSettings()">Account</button>
+        </mat-expansion-panel>
+      </mat-accordion>
+  
+      <button mat-raised-button color="warn" (click)="logOff()">Log off</button>
+    </mat-card>
+  </div>
+  

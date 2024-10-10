@@ -1,1 +1,45 @@
-<p>new-game-menu works!</p>
+<mat-toolbar color="primary">
+    <span>New Venture Setup</span>
+  </mat-toolbar>
+  
+  <div class="new-venture-container">
+    <mat-card>
+      <h1>Start Your New Venture</h1>
+  
+      <form>
+        <!-- Venture Name -->
+        <mat-form-field appearance="outline">
+          <mat-label>Company Name</mat-label>
+          <input matInput placeholder="Enter company name" required>
+        </mat-form-field>
+  
+        <!-- Industry Selection -->
+        <mat-form-field appearance="outline">
+          <mat-label>Industry</mat-label>
+          <mat-select required>
+            <mat-option value="tech">Technology</mat-option>
+            <mat-option value="finance">Finance</mat-option>
+            <mat-option value="health">Healthcare</mat-option>
+            <mat-option value="manufacturing">Manufacturing</mat-option>
+            <mat-option value="retail">Retail</mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <!-- Initial Capital -->
+        <mat-form-field appearance="outline">
+          <mat-label>Initial Capital (USD)</mat-label>
+          <input matInput type="number" placeholder="Enter starting capital" required>
+        </mat-form-field>
+  
+        <!-- Business Plan -->
+        <mat-form-field appearance="outline">
+          <mat-label>Business Plan Overview</mat-label>
+          <textarea matInput rows="4" placeholder="Describe your business plan"></textarea>
+        </mat-form-field>
+  
+        <!-- Submit Button -->
+        <button mat-raised-button color="primary" type="submit">Start Venture</button>
+      </form>
+    </mat-card>
+  </div>
+  
